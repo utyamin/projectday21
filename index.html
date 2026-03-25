@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PROJECT : DAY21</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      background: #f7f7f7;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    #app > div {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      background: #fff;
+    }
+
+    label {
+      cursor: pointer;
+      margin: 6px 0;
+    }
+
+    #submitBtn,
+    #downloadBtn {
+      margin-top: 20px;
+      padding: 10px 18px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      color: white;
+    }
+
+    #submitBtn {
+      background: #2f6fed;
+    }
+
+    #downloadBtn {
+      background: #2e9b57;
+      display: none;
+      margin-left: 8px;
+    }
+
+    #result {
+      margin-top: 24px;
+      padding: 16px;
+      background: #f5f5f5;
+      border-radius: 8px;
+    }
+
+    .preview-box {
+      margin-top: 24px;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+    }
+
+    #ticketCanvas {
+      max-width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      display: none;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>PROJECT : DAY21</h1>
+
+  <div style="margin-bottom: 20px;">
+    <label for="playerName">名前：</label>
+    <input type="text" id="playerName" placeholder="名前を入力" />
+  </div>
+
+  <div id="app"></div>
+
+  <button id="submitBtn">結果を見る</button>
+  <button id="downloadBtn">チケットをダウンロード</button>
+
+  <div class="preview-box">
+    <h2>チケット画像プレビュー</h2>
+    <canvas id="ticketCanvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
